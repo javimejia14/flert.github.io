@@ -1,0 +1,227 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+  <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+      <meta name="generator" content="PhpSpreadsheet, https://github.com/PHPOffice/PhpSpreadsheet">
+      <meta name="author" content="JAVIER EDGARDO MEJÍA RODRÍGUEZ" />
+    <style type="text/css">
+      html { font-family:Calibri, Arial, Helvetica, sans-serif; font-size:11pt; background-color:white }
+      a.comment-indicator:hover + div.comment { background:#ffd; position:absolute; display:block; border:1px solid black; padding:0.5em }
+      a.comment-indicator { background:red; display:inline-block; border:1px solid black; width:0.5em; height:0.5em }
+      div.comment { display:none }
+      table { border-collapse:collapse; page-break-after:always }
+      .gridlines td { border:1px dotted black }
+      .gridlines th { border:1px dotted black }
+      .b { text-align:center }
+      .e { text-align:center }
+      .f { text-align:right }
+      .inlineStr { text-align:left }
+      .n { text-align:right }
+      .s { text-align:left }
+      td.style0 { vertical-align:bottom; border-bottom:none #000000; border-top:none #000000; border-left:none #000000; border-right:none #000000; color:#000000; font-family:'Aptos Narrow'; font-size:11pt; background-color:white }
+      th.style0 { vertical-align:bottom; border-bottom:none #000000; border-top:none #000000; border-left:none #000000; border-right:none #000000; color:#000000; font-family:'Aptos Narrow'; font-size:11pt; background-color:white }
+      td.style1 { vertical-align:bottom; border-bottom:none #000000; border-top:none #000000; border-left:none #000000; border-right:none #000000; color:#000000; font-family:'Aptos'; font-size:11pt; background-color:white }
+      th.style1 { vertical-align:bottom; border-bottom:none #000000; border-top:none #000000; border-left:none #000000; border-right:none #000000; color:#000000; font-family:'Aptos'; font-size:11pt; background-color:white }
+      td.style2 { vertical-align:middle; text-align:center; border-bottom:2px solid #000000 !important; border-top:2px solid #000000 !important; border-left:2px solid #000000 !important; border-right:2px solid #000000 !important; font-weight:bold; color:#000000; font-family:'Century Gothic'; font-size:12pt; background-color:white }
+      th.style2 { vertical-align:middle; text-align:center; border-bottom:2px solid #000000 !important; border-top:2px solid #000000 !important; border-left:2px solid #000000 !important; border-right:2px solid #000000 !important; font-weight:bold; color:#000000; font-family:'Century Gothic'; font-size:12pt; background-color:white }
+      td.style3 { vertical-align:middle; text-align:center; border-bottom:2px solid #000000 !important; border-top:2px solid #000000 !important; border-left:none #000000; border-right:2px solid #000000 !important; font-weight:bold; color:#000000; font-family:'Century Gothic'; font-size:12pt; background-color:white }
+      th.style3 { vertical-align:middle; text-align:center; border-bottom:2px solid #000000 !important; border-top:2px solid #000000 !important; border-left:none #000000; border-right:2px solid #000000 !important; font-weight:bold; color:#000000; font-family:'Century Gothic'; font-size:12pt; background-color:white }
+      td.style4 { vertical-align:middle; text-align:left; padding-left:0px; border-bottom:2px solid #000000 !important; border-top:2px solid #000000 !important; border-left:2px solid #000000 !important; border-right:2px solid #000000 !important; color:#000000; font-family:'Century Gothic'; font-size:12pt; background-color:white }
+      th.style4 { vertical-align:middle; text-align:left; padding-left:0px; border-bottom:2px solid #000000 !important; border-top:2px solid #000000 !important; border-left:2px solid #000000 !important; border-right:2px solid #000000 !important; color:#000000; font-family:'Century Gothic'; font-size:12pt; background-color:white }
+      td.style5 { vertical-align:middle; text-align:left; padding-left:0px; border-bottom:2px solid #000000 !important; border-top:none #000000; border-left:none #000000; border-right:2px solid #000000 !important; color:#000000; font-family:'Century Gothic'; font-size:12pt; background-color:white }
+      th.style5 { vertical-align:middle; text-align:left; padding-left:0px; border-bottom:2px solid #000000 !important; border-top:none #000000; border-left:none #000000; border-right:2px solid #000000 !important; color:#000000; font-family:'Century Gothic'; font-size:12pt; background-color:white }
+      td.style6 { vertical-align:middle; text-align:center; border-bottom:2px solid #000000 !important; border-top:none #000000; border-left:none #000000; border-right:2px solid #000000 !important; color:#000000; font-family:'Century Gothic'; font-size:12pt; background-color:white }
+      th.style6 { vertical-align:middle; text-align:center; border-bottom:2px solid #000000 !important; border-top:none #000000; border-left:none #000000; border-right:2px solid #000000 !important; color:#000000; font-family:'Century Gothic'; font-size:12pt; background-color:white }
+      td.style7 { vertical-align:middle; text-align:left; padding-left:0px; border-bottom:2px solid #000000 !important; border-top:none #000000; border-left:2px solid #000000 !important; border-right:2px solid #000000 !important; color:#000000; font-family:'Century Gothic'; font-size:12pt; background-color:white }
+      th.style7 { vertical-align:middle; text-align:left; padding-left:0px; border-bottom:2px solid #000000 !important; border-top:none #000000; border-left:2px solid #000000 !important; border-right:2px solid #000000 !important; color:#000000; font-family:'Century Gothic'; font-size:12pt; background-color:white }
+      td.style8 { vertical-align:middle; text-align:justify; border-bottom:none #000000; border-top:none #000000; border-left:none #000000; border-right:none #000000; color:#000000; font-family:'Century Gothic'; font-size:12pt; background-color:white }
+      th.style8 { vertical-align:middle; text-align:justify; border-bottom:none #000000; border-top:none #000000; border-left:none #000000; border-right:none #000000; color:#000000; font-family:'Century Gothic'; font-size:12pt; background-color:white }
+      td.style9 { vertical-align:middle; text-align:center; border-bottom:2px solid #000000 !important; border-top:none #000000; border-left:2px solid #000000 !important; border-right:2px solid #000000 !important; color:#000000; font-family:'Century Gothic'; font-size:12pt; background-color:white }
+      th.style9 { vertical-align:middle; text-align:center; border-bottom:2px solid #000000 !important; border-top:none #000000; border-left:2px solid #000000 !important; border-right:2px solid #000000 !important; color:#000000; font-family:'Century Gothic'; font-size:12pt; background-color:white }
+      td.style10 { vertical-align:middle; text-align:left; padding-left:0px; border-bottom:2px solid #000000 !important; border-top:2px solid #000000 !important; border-left:none #000000; border-right:2px solid #000000 !important; color:#000000; font-family:'Century Gothic'; font-size:12pt; background-color:white }
+      th.style10 { vertical-align:middle; text-align:left; padding-left:0px; border-bottom:2px solid #000000 !important; border-top:2px solid #000000 !important; border-left:none #000000; border-right:2px solid #000000 !important; color:#000000; font-family:'Century Gothic'; font-size:12pt; background-color:white }
+      td.style11 { vertical-align:middle; text-align:left; padding-left:0px; border-bottom:2px solid #000000 !important; border-top:none #000000; border-left:none #000000; border-right:2px solid #000000 !important; color:#000000; font-family:'Century Gothic'; font-size:12pt; background-color:white }
+      th.style11 { vertical-align:middle; text-align:left; padding-left:0px; border-bottom:2px solid #000000 !important; border-top:none #000000; border-left:none #000000; border-right:2px solid #000000 !important; color:#000000; font-family:'Century Gothic'; font-size:12pt; background-color:white }
+      table.sheet0 col.col0 { width:42pt }
+      table.sheet0 col.col1 { width:65.06666592pt }
+      table.sheet0 col.col2 { width:178.25555351pt }
+      table.sheet0 col.col3 { width:135.555554pt }
+      table.sheet0 tr { height:15pt }
+      table.sheet0 tr.row1 { height:15.75pt }
+      table.sheet0 tr.row2 { height:15.75pt }
+      table.sheet0 tr.row3 { height:69.75pt }
+      table.sheet0 tr.row4 { height:35.25pt }
+      table.sheet0 tr.row5 { height:69.75pt }
+      table.sheet0 tr.row6 { height:35.25pt }
+      table.sheet0 tr.row7 { height:52.5pt }
+      table.sheet0 tr.row8 { height:35.25pt }
+      table.sheet0 tr.row9 { height:35.25pt }
+      table.sheet0 tr.row10 { height:52.5pt }
+      table.sheet0 tr.row11 { height:87pt }
+      table.sheet0 tr.row12 { height:52.5pt }
+      table.sheet0 tr.row13 { height:87pt }
+      table.sheet0 tr.row14 { height:35.25pt }
+      table.sheet0 tr.row15 { height:35.25pt }
+      table.sheet0 tr.row16 { height:35.25pt }
+      table.sheet0 tr.row17 { height:52.5pt }
+      table.sheet0 tr.row18 { height:35.25pt }
+      table.sheet0 tr.row19 { height:69.75pt }
+      table.sheet0 tr.row20 { height:35.25pt }
+      table.sheet0 tr.row21 { height:52.5pt }
+      table.sheet0 tr.row22 { height:35.25pt }
+    </style>
+  </head>
+
+  <body>
+<style>
+@page { margin-left: 0.7in; margin-right: 0.7in; margin-top: 0.75in; margin-bottom: 0.75in; }
+body { margin-left: 0.7in; margin-right: 0.7in; margin-top: 0.75in; margin-bottom: 0.75in; }
+</style>
+    <table border="0" cellpadding="0" cellspacing="0" id="sheet0" class="sheet0">
+        <col class="col0">
+        <col class="col1">
+        <col class="col2">
+        <col class="col3">
+        <tbody>
+          <tr class="row0">
+            <td class="column0">&nbsp;</td>
+            <td class="column1">&nbsp;</td>
+            <td class="column2">&nbsp;</td>
+            <td class="column3">&nbsp;</td>
+          </tr>
+          <tr class="row1">
+            <td class="column0">&nbsp;</td>
+            <td class="column1">&nbsp;</td>
+            <td class="column2">&nbsp;</td>
+            <td class="column3">&nbsp;</td>
+          </tr>
+          <tr class="row2">
+            <td class="column0">&nbsp;</td>
+            <td class="column1 style1 null"></td>
+            <td class="column2 style2 s">Descripción</td>
+            <td class="column3 style3 s">Tiempo</td>
+          </tr>
+          <tr class="row3">
+            <td class="column0">&nbsp;</td>
+            <td class="column1 style4 s">Semana 1</td>
+            <td class="column2 style5 s">Análisis de conceptos de auditoria en informática, diferencia entre auditoria y consultoría.</td>
+            <td class="column3 style6 s">15 de julio al 21 de julio de 2024</td>
+          </tr>
+          <tr class="row4">
+            <td class="column0">&nbsp;</td>
+            <td class="column1 style7 s">Semana 2</td>
+            <td class="column2 style5 s">Entrevista sobre tipos de auditoría.</td>
+            <td class="column3 style6 s">22 de julio al 28 de julio de 2024</td>
+          </tr>
+          <tr class="row5">
+            <td class="column0">&nbsp;</td>
+            <td class="column1 style7 s">Semana 3</td>
+            <td class="column2 style5 s">Aplicando auditoria de programas a computadoras personales.</td>
+            <td class="column3 style6 s">29 de julio al 11 de agosto de 2024 (Incluyendo vacaciones de agosto)</td>
+          </tr>
+          <tr class="row6">
+            <td class="column0">&nbsp;</td>
+            <td class="column1 style7 s">Semana 4</td>
+            <td class="column2 style5 s">Reconocimiento de la empresa y aplicando COBIT 5.0.</td>
+            <td class="column3 style6 s">12 de agosto al 18 de agosto de 2024</td>
+          </tr>
+          <tr class="row7">
+            <td class="column0">&nbsp;</td>
+            <td class="column1 style7 s">Semana 5</td>
+            <td class="column2 style5 s">Conociendo las leyes en materia de informática existentes en el país.</td>
+            <td class="column3 style6 s">19 de agosto al 25 de agosto de 2024</td>
+          </tr>
+          <tr class="row8">
+            <td class="column0">&nbsp;</td>
+            <td class="column1 style7 s">Semana 6</td>
+            <td class="column2 style5 s">Defensa sobre la presentación de la empresa.</td>
+            <td class="column3 style6 s">26 de agosto al 1 de septiembre de 2024</td>
+          </tr>
+          <tr class="row9">
+            <td class="column0">&nbsp;</td>
+            <td class="column1 style7 s">Semana 7</td>
+            <td class="column2 style5 s">Comparación de COBIT 5.0 con otros marcos de trabajo</td>
+            <td class="column3 style6 s">2 de septiembre al 8 de septiembre de 2024</td>
+          </tr>
+          <tr class="row10">
+            <td class="column0">&nbsp;</td>
+            <td class="column1 style7 s">Semana 8</td>
+            <td class="column2 style5 s">Identificación de las necesidades de la empresa a auditar</td>
+            <td class="column3 style6 s">9 de septiembre al 15 de septiembre de 2024</td>
+          </tr>
+          <tr class="row11">
+            <td class="column0">&nbsp;</td>
+            <td class="column1 style7 s">Semana 9</td>
+            <td class="column2 style8 s">Formulación de preguntas adaptadas a la escala de Likert y tabulación de datos de respuestas de las partes interesadas.</td>
+            <td class="column3 style9 s">16 de septiembre al 22 de septiembre de 2024.</td>
+          </tr>
+          <tr class="row12">
+            <td class="column0">&nbsp;</td>
+            <td class="column1 style7 s">Semana 10</td>
+            <td class="column2 style10 s">Tabulación de datos para la obtención de datos de Metas de TI de la empresa.</td>
+            <td class="column3 style6 s">23 de septiembre al 29 de septiembre.</td>
+          </tr>
+          <tr class="row13">
+            <td class="column0">&nbsp;</td>
+            <td class="column1 style7 s">Semana 11</td>
+            <td class="column2 style5 s">Evaluación de las metas de TI con las métricas de los procesos habilitantes, para obtener los procesos con deficiencia en la empresa. </td>
+            <td class="column3 style6 s">30 de septiembre al 6 de octubre de 2024.</td>
+          </tr>
+          <tr class="row14">
+            <td class="column0">&nbsp;</td>
+            <td class="column1 style7 s">Semana 12</td>
+            <td class="column2 style5 s">Evaluación de procesos relacionados a la unidad de TI.</td>
+            <td class="column3 style6 s">7 de octubre al 13 de octubre de 2024.</td>
+          </tr>
+          <tr class="row15">
+            <td class="column0">&nbsp;</td>
+            <td class="column1 style7 s">Semana 13</td>
+            <td class="column2 style5 s">Defensa de Mapeo de metas de la empresa</td>
+            <td class="column3 style6 s">14 de octubre al 20 de octubre de 2024.</td>
+          </tr>
+          <tr class="row16">
+            <td class="column0">&nbsp;</td>
+            <td class="column1 style7 s">Semana 14</td>
+            <td class="column2 style5 s"> Evaluación técnica de los procesos habilitantes.</td>
+            <td class="column3 style6 s">21 de octubre al 27 de octubre de 2024.</td>
+          </tr>
+          <tr class="row17">
+            <td class="column0">&nbsp;</td>
+            <td class="column1 style7 s">Semana 15</td>
+            <td class="column2 style5 s">Descripción de los procesos con menor puntuación y matriz RACI.</td>
+            <td class="column3 style6 s">28 de octubre al 3 de noviembre de 2024.</td>
+          </tr>
+          <tr class="row18">
+            <td class="column0">&nbsp;</td>
+            <td class="column1 style7 s">Semana 16</td>
+            <td class="column2 style5 s"> Definir las entradas y salidas, actividades de los procesos.</td>
+            <td class="column3 style6 s">4 de noviembre al 10 de noviembre de 2024.</td>
+          </tr>
+          <tr class="row19">
+            <td class="column0">&nbsp;</td>
+            <td class="column1 style7 s">Semana 17</td>
+            <td class="column2 style5 s">Definición de los posibles riesgos que se presentan en cada uno de los procesos, en la matriz de riesgos</td>
+            <td class="column3 style6 s">11 de noviembre al 17 de noviembre de 2024.</td>
+          </tr>
+          <tr class="row20">
+            <td class="column0">&nbsp;</td>
+            <td class="column1 style7 s">Semana 18</td>
+            <td class="column2 style5 s">Propuesta de políticas a implementar</td>
+            <td class="column3 style6 s">18 de noviembre al 24 de noviembre de 2024.</td>
+          </tr>
+          <tr class="row21">
+            <td class="column0">&nbsp;</td>
+            <td class="column1 style7 s">Semana 19</td>
+            <td class="column2 style5 s">Planteamiento de Beneficios y costos de la implementación de las políticas.</td>
+            <td class="column3 style6 s">25 de noviembre al 1 de diciembre de 2024.</td>
+          </tr>
+          <tr class="row22">
+            <td class="column0">&nbsp;</td>
+            <td class="column1 style7 s">Semana 20</td>
+            <td class="column2 style11 s"> Defensa de reporte final de auditoría.</td>
+            <td class="column3 style6 s">2 de diciembre al 8 de diciembre de 2024.</td>
+          </tr>
+        </tbody>
+    </table>
+  </body>
+</html>

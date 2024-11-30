@@ -1,0 +1,163 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+  <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+      <meta name="generator" content="PhpSpreadsheet, https://github.com/PHPOffice/PhpSpreadsheet">
+      <meta name="author" content="JAVIER EDGARDO MEJÍA RODRÍGUEZ" />
+    <style type="text/css">
+      html { font-family:Calibri, Arial, Helvetica, sans-serif; font-size:11pt; background-color:white }
+      a.comment-indicator:hover + div.comment { background:#ffd; position:absolute; display:block; border:1px solid black; padding:0.5em }
+      a.comment-indicator { background:red; display:inline-block; border:1px solid black; width:0.5em; height:0.5em }
+      div.comment { display:none }
+      table { border-collapse:collapse; page-break-after:always }
+      .gridlines td { border:1px dotted black }
+      .gridlines th { border:1px dotted black }
+      .b { text-align:center }
+      .e { text-align:center }
+      .f { text-align:right }
+      .inlineStr { text-align:left }
+      .n { text-align:right }
+      .s { text-align:left }
+      td.style0 { vertical-align:bottom; border-bottom:none #000000; border-top:none #000000; border-left:none #000000; border-right:none #000000; color:#000000; font-family:'Aptos Narrow'; font-size:11pt; background-color:white }
+      th.style0 { vertical-align:bottom; border-bottom:none #000000; border-top:none #000000; border-left:none #000000; border-right:none #000000; color:#000000; font-family:'Aptos Narrow'; font-size:11pt; background-color:white }
+      td.style1 { vertical-align:middle; border-bottom:2px solid #000000 !important; border-top:2px solid #000000 !important; border-left:none #000000; border-right:2px solid #000000 !important; color:#000000; font-family:'Aptos Narrow'; font-size:11pt; background-color:white }
+      th.style1 { vertical-align:middle; border-bottom:2px solid #000000 !important; border-top:2px solid #000000 !important; border-left:none #000000; border-right:2px solid #000000 !important; color:#000000; font-family:'Aptos Narrow'; font-size:11pt; background-color:white }
+      td.style2 { vertical-align:middle; border-bottom:2px solid #000000 !important; border-top:none #000000; border-left:2px solid #000000 !important; border-right:2px solid #000000 !important; color:#000000; font-family:'Aptos Narrow'; font-size:11pt; background-color:white }
+      th.style2 { vertical-align:middle; border-bottom:2px solid #000000 !important; border-top:none #000000; border-left:2px solid #000000 !important; border-right:2px solid #000000 !important; color:#000000; font-family:'Aptos Narrow'; font-size:11pt; background-color:white }
+      td.style3 { vertical-align:middle; border-bottom:2px solid #000000 !important; border-top:none #000000; border-left:none #000000; border-right:2px solid #000000 !important; color:#000000; font-family:'Aptos Narrow'; font-size:11pt; background-color:white }
+      th.style3 { vertical-align:middle; border-bottom:2px solid #000000 !important; border-top:none #000000; border-left:none #000000; border-right:2px solid #000000 !important; color:#000000; font-family:'Aptos Narrow'; font-size:11pt; background-color:white }
+      td.style4 { vertical-align:middle; border-bottom:2px solid #000000 !important; border-top:none #000000; border-left:none #000000; border-right:2px solid #000000 !important; color:#000000; font-family:'Aptos Narrow'; font-size:11pt; background-color:white }
+      th.style4 { vertical-align:middle; border-bottom:2px solid #000000 !important; border-top:none #000000; border-left:none #000000; border-right:2px solid #000000 !important; color:#000000; font-family:'Aptos Narrow'; font-size:11pt; background-color:white }
+      td.style5 { vertical-align:middle; border-bottom:none #000000; border-top:none #000000; border-left:none #000000; border-right:none #000000; color:#000000; font-family:'Aptos Narrow'; font-size:11pt; background-color:white }
+      th.style5 { vertical-align:middle; border-bottom:none #000000; border-top:none #000000; border-left:none #000000; border-right:none #000000; color:#000000; font-family:'Aptos Narrow'; font-size:11pt; background-color:white }
+      td.style6 { vertical-align:middle; text-align:center; border-bottom:2px solid #000000 !important; border-top:2px solid #000000 !important; border-left:2px solid #000000 !important; border-right:none #000000; font-weight:bold; color:#000000; font-family:'Aptos Narrow'; font-size:11pt; background-color:white }
+      th.style6 { vertical-align:middle; text-align:center; border-bottom:2px solid #000000 !important; border-top:2px solid #000000 !important; border-left:2px solid #000000 !important; border-right:none #000000; font-weight:bold; color:#000000; font-family:'Aptos Narrow'; font-size:11pt; background-color:white }
+      td.style7 { vertical-align:middle; text-align:center; border-bottom:2px solid #000000 !important; border-top:2px solid #000000 !important; border-left:none #000000; border-right:none #000000; font-weight:bold; color:#000000; font-family:'Aptos Narrow'; font-size:11pt; background-color:white }
+      th.style7 { vertical-align:middle; text-align:center; border-bottom:2px solid #000000 !important; border-top:2px solid #000000 !important; border-left:none #000000; border-right:none #000000; font-weight:bold; color:#000000; font-family:'Aptos Narrow'; font-size:11pt; background-color:white }
+      td.style8 { vertical-align:middle; text-align:center; border-bottom:2px solid #000000 !important; border-top:2px solid #000000 !important; border-left:none #000000; border-right:2px solid #000000 !important; font-weight:bold; color:#000000; font-family:'Aptos Narrow'; font-size:11pt; background-color:white }
+      th.style8 { vertical-align:middle; text-align:center; border-bottom:2px solid #000000 !important; border-top:2px solid #000000 !important; border-left:none #000000; border-right:2px solid #000000 !important; font-weight:bold; color:#000000; font-family:'Aptos Narrow'; font-size:11pt; background-color:white }
+      td.style9 { vertical-align:middle; border-bottom:2px solid #000000 !important; border-top:2px solid #000000 !important; border-left:none #000000; border-right:2px solid #000000 !important; font-weight:bold; color:#000000; font-family:'Aptos Narrow'; font-size:11pt; background-color:white }
+      th.style9 { vertical-align:middle; border-bottom:2px solid #000000 !important; border-top:2px solid #000000 !important; border-left:none #000000; border-right:2px solid #000000 !important; font-weight:bold; color:#000000; font-family:'Aptos Narrow'; font-size:11pt; background-color:white }
+      td.style10 { vertical-align:middle; border-bottom:2px solid #000000 !important; border-top:2px solid #000000 !important; border-left:none #000000; border-right:2px solid #000000 !important; font-weight:bold; color:#000000; font-family:'Aptos Narrow'; font-size:11pt; background-color:white }
+      th.style10 { vertical-align:middle; border-bottom:2px solid #000000 !important; border-top:2px solid #000000 !important; border-left:none #000000; border-right:2px solid #000000 !important; font-weight:bold; color:#000000; font-family:'Aptos Narrow'; font-size:11pt; background-color:white }
+      td.style11 { vertical-align:middle; border-bottom:2px solid #000000 !important; border-top:none #000000; border-left:2px solid #000000 !important; border-right:2px solid #000000 !important; font-weight:bold; color:#000000; font-family:'Aptos Narrow'; font-size:11pt; background-color:white }
+      th.style11 { vertical-align:middle; border-bottom:2px solid #000000 !important; border-top:none #000000; border-left:2px solid #000000 !important; border-right:2px solid #000000 !important; font-weight:bold; color:#000000; font-family:'Aptos Narrow'; font-size:11pt; background-color:white }
+      td.style12 { vertical-align:middle; border-bottom:2px solid #000000 !important; border-top:none #000000; border-left:none #000000; border-right:2px solid #000000 !important; font-weight:bold; color:#000000; font-family:'Aptos Narrow'; font-size:11pt; background-color:white }
+      th.style12 { vertical-align:middle; border-bottom:2px solid #000000 !important; border-top:none #000000; border-left:none #000000; border-right:2px solid #000000 !important; font-weight:bold; color:#000000; font-family:'Aptos Narrow'; font-size:11pt; background-color:white }
+      td.style13 { vertical-align:middle; border-bottom:2px solid #000000 !important; border-top:none #000000; border-left:none #000000; border-right:2px solid #000000 !important; font-weight:bold; color:#000000; font-family:'Aptos Narrow'; font-size:11pt; background-color:white }
+      th.style13 { vertical-align:middle; border-bottom:2px solid #000000 !important; border-top:none #000000; border-left:none #000000; border-right:2px solid #000000 !important; font-weight:bold; color:#000000; font-family:'Aptos Narrow'; font-size:11pt; background-color:white }
+      td.style14 { vertical-align:middle; text-align:center; border-bottom:none #000000; border-top:2px solid #000000 !important; border-left:2px solid #000000 !important; border-right:2px solid #000000 !important; font-weight:bold; color:#000000; font-family:'Aptos Narrow'; font-size:11pt; background-color:white }
+      th.style14 { vertical-align:middle; text-align:center; border-bottom:none #000000; border-top:2px solid #000000 !important; border-left:2px solid #000000 !important; border-right:2px solid #000000 !important; font-weight:bold; color:#000000; font-family:'Aptos Narrow'; font-size:11pt; background-color:white }
+      td.style15 { vertical-align:middle; text-align:center; border-bottom:none #000000; border-top:none #000000; border-left:2px solid #000000 !important; border-right:2px solid #000000 !important; font-weight:bold; color:#000000; font-family:'Aptos Narrow'; font-size:11pt; background-color:white }
+      th.style15 { vertical-align:middle; text-align:center; border-bottom:none #000000; border-top:none #000000; border-left:2px solid #000000 !important; border-right:2px solid #000000 !important; font-weight:bold; color:#000000; font-family:'Aptos Narrow'; font-size:11pt; background-color:white }
+      td.style16 { vertical-align:middle; text-align:center; border-bottom:2px solid #000000 !important; border-top:none #000000; border-left:2px solid #000000 !important; border-right:2px solid #000000 !important; font-weight:bold; color:#000000; font-family:'Aptos Narrow'; font-size:11pt; background-color:white }
+      th.style16 { vertical-align:middle; text-align:center; border-bottom:2px solid #000000 !important; border-top:none #000000; border-left:2px solid #000000 !important; border-right:2px solid #000000 !important; font-weight:bold; color:#000000; font-family:'Aptos Narrow'; font-size:11pt; background-color:white }
+      table.sheet0 col.col0 { width:42pt }
+      table.sheet0 col.col1 { width:23.04444418pt }
+      table.sheet0 col.col2 { width:149.1111094pt }
+      table.sheet0 col.col3 { width:42pt }
+      table.sheet0 col.col4 { width:66.42222146pt }
+      table.sheet0 col.col5 { width:66.42222146pt }
+      table.sheet0 tr { height:15pt }
+      table.sheet0 tr.row1 { height:15.75pt }
+      table.sheet0 tr.row2 { height:30.75pt }
+      table.sheet0 tr.row3 { height:15.75pt }
+      table.sheet0 tr.row4 { height:90.75pt }
+      table.sheet0 tr.row5 { height:75.75pt }
+      table.sheet0 tr.row6 { height:75.75pt }
+      table.sheet0 tr.row7 { height:135.75pt }
+      table.sheet0 tr.row8 { height:150.75pt }
+      table.sheet0 tr.row9 { height:105.75pt }
+    </style>
+  </head>
+
+  <body>
+<style>
+@page { margin-left: 0.7in; margin-right: 0.7in; margin-top: 0.75in; margin-bottom: 0.75in; }
+body { margin-left: 0.7in; margin-right: 0.7in; margin-top: 0.75in; margin-bottom: 0.75in; }
+</style>
+    <table border="0" cellpadding="0" cellspacing="0" id="sheet0" class="sheet0">
+        <col class="col0">
+        <col class="col1">
+        <col class="col2">
+        <col class="col3">
+        <col class="col4">
+        <col class="col5">
+        <tbody>
+          <tr class="row0">
+            <td class="column0">&nbsp;</td>
+            <td class="column1">&nbsp;</td>
+            <td class="column2">&nbsp;</td>
+            <td class="column3">&nbsp;</td>
+            <td class="column4">&nbsp;</td>
+            <td class="column5">&nbsp;</td>
+          </tr>
+          <tr class="row1">
+            <td class="column0">&nbsp;</td>
+            <td class="column1">&nbsp;</td>
+            <td class="column2">&nbsp;</td>
+            <td class="column3">&nbsp;</td>
+            <td class="column4">&nbsp;</td>
+            <td class="column5">&nbsp;</td>
+          </tr>
+          <tr class="row2">
+            <td class="column0">&nbsp;</td>
+            <td class="column1 style6 s style8" colspan="3">Activos de Información</td>
+            <td class="column4 style9 s">Activos Físicos</td>
+            <td class="column5 style10 s">Activos Humanos</td>
+          </tr>
+          <tr class="row3">
+            <td class="column0">&nbsp;</td>
+            <td class="column1 style11 s">COD</td>
+            <td class="column2 style12 s">Manejo de información de TI</td>
+            <td class="column3 style13 s">Software</td>
+            <td class="column4 style13 s">Hardware</td>
+            <td class="column5 style13 s">Personal</td>
+          </tr>
+          <tr class="row4">
+            <td class="column0">&nbsp;</td>
+            <td class="column1 style14 s style16" rowspan="6">EDM03.02</td>
+            <td class="column2 style3 s">Promover una cultura consciente de los riesgos TI e impulsar a la empresa a una identificación proactiva de riesgos TI, oportunidades e impactos potenciales en el negocio.</td>
+            <td class="column3 style4 s">Resolver</td>
+            <td class="column4 style4 s">Computadora.</td>
+            <td class="column5 style3 s">Jefe de Unidad de TI</td>
+          </tr>
+          <tr class="row5">
+            <td class="column0">&nbsp;</td>
+            <td class="column2 style5 s">Orientar la integración de las operaciones y la estrategia de riesgos de TI con las decisiones y operaciones empresariales estratégicas.</td>
+            <td class="column3 style2 s">Power BI</td>
+            <td class="column4 style3 s">Computadora, Servidor de datos</td>
+            <td class="column5 style3 s">Jefe de Unidad de TI</td>
+          </tr>
+          <tr class="row6">
+            <td class="column0">&nbsp;</td>
+            <td class="column2 style1 s">Orientar la elaboración de planes de comunicación de riesgos (cubriendo todos los niveles de la empresa), así como los planes de acción de riesgo.</td>
+            <td class="column3 style3 s">Microsoft Teams, </td>
+            <td class="column4 style3 s">Computadora</td>
+            <td class="column5 style3 s">Jefe de Unidad de TI, Encargado de Soporte Técnico</td>
+          </tr>
+          <tr class="row7">
+            <td class="column0">&nbsp;</td>
+            <td class="column2 style3 s">Orientar la implantación de mecanismos apropiados para responder rápidamente a los riesgos cambiantes y notificar inmediatamente a los niveles adecuados de gestión, soportados principios de escalado acordados (qué informar, cuándo, dónde y cómo).</td>
+            <td class="column3 style4 s">PagerDuty, </td>
+            <td class="column4 style4 s">Computadora</td>
+            <td class="column5 style3 s">Encargado de Soporte Técnico</td>
+          </tr>
+          <tr class="row8">
+            <td class="column0">&nbsp;</td>
+            <td class="column2 style3 s">Orientar para que el riesgo, las oportunidades, los problemas y preocupaciones puedan ser identificadas y notificadas por cualquier persona en cualquier momento. El riesgo debe ser gestionado de acuerdo con las políticas y procedimientos publicados y escalados a los decisores relevantes.</td>
+            <td class="column3 style4 s">JIRA</td>
+            <td class="column4 style3 s">Computadora, Teléfonos Corporativos</td>
+            <td class="column5 style3 s">Encargado de Soporte Técnico.</td>
+          </tr>
+          <tr class="row9">
+            <td class="column0">&nbsp;</td>
+            <td class="column2 style3 s">Identificar los objetivos e indicadores clave de los procesos de gobierno y gestión de riesgos a ser monitorizados y aprobar los enfoques, métodos, técnicas y procesos para capturar y notificar la información de medición.</td>
+            <td class="column3 style4 s">Archer (RSA)</td>
+            <td class="column4 style4 s">Computadora</td>
+            <td class="column5 style3 s">Jefe de Unidad de TI</td>
+          </tr>
+        </tbody>
+    </table>
+  </body>
+</html>
